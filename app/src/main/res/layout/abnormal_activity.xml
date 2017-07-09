@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_bg_gray"
+    android:orientation="vertical">
+    <com.foxconn.rfid.theowner.view.widgets.Header
+        android:id="@+id/abnormal_bs_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerTitle="@string/abnormal_base_station"
+        app:leftIcon="@drawable/back"
+        app:rightIconVisible="gone"/>
+
+    <!--离线-->
+    <LinearLayout
+        android:id="@+id/ll_offline_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_horizontal_20"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/btn_margin_vertical_10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线 ( "/>
+        <TextView
+            android:id="@+id/tv_offline_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textDarkBlue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" )"/>
+    </LinearLayout>
+
+
+    <!--低电-->
+    <LinearLayout
+        android:id="@+id/ll_lowbattery_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding_horizontal_20"
+        android:layout_marginTop="@dimen/btn_margin_vertical_10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低电 ( "/>
+        <TextView
+            android:id="@+id/tv_lowbattery_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textDarkBlue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" )"/>
+    </LinearLayout>
+
+
+    <!--高温-->
+    <LinearLayout
+        android:id="@+id/ll_hightemp_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/btn_margin_vertical_10"
+        android:padding="@dimen/padding_horizontal_20"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高温 ( "/>
+        <TextView
+            android:id="@+id/tv_hightemp_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textDarkBlue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" )"/>
+    </LinearLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/lv_abnormal_bs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"/>-->
+
+</LinearLayout>
